@@ -20,8 +20,6 @@ namespace CC_application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // TODO change all datetimepickers to regular text input.
-            // Reason: can't find why original document is getting replaced for dates only.
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.ShowDialog();
             string filePath = fileDialog.FileName.ToString();
@@ -30,11 +28,8 @@ namespace CC_application
             Document doc = app.Documents.Open(filePath);
             try
             {
-
                 if (doc != null)
                 {
-                    clBirth.Format = DateTimePickerFormat.Custom;
-                    clBirth.CustomFormat = "dd.MM.yyyy";
                     string[] inputArray = {
                         cName.Text, cAddr.Text, cPib.Text, cMb.Text, cCont.Text,
                         clName.Text,clBirth.Text, clNat.Text,clPssn.Text, clPsRelDate.Text, clPsExDate.Text, clPos.Text, clStart.Text, clEnd.Text,
@@ -51,7 +46,7 @@ namespace CC_application
                     };
                     for (int i=0; i < parseArray.Length;i++)
                     {
-                        if (inputArray[i] != "" && inputArray[i] != "01.01.1753")
+                        if (inputArray[i] != "")
                         {
                             doc.Content.Find.Execute(parseArray[i], false, true, false, false, false, true, 1, false, inputArray[i], 2,
                             false, false, false, false);
@@ -71,43 +66,13 @@ namespace CC_application
                                 WdExportCreateBookmarks.wdExportCreateHeadingBookmarks, true, true, false);
 
                         System.Diagnostics.Process.Start(saveFilePath);
-                    } else
-                    {
-                        if (doc != null)
-                        {
-                            doc.Close();
-                        }
-                        app.Quit();
                     }
-                } else
-                {
-                    if (doc != null)
-                    {
-                        doc.Close();
-                    }
-                    app.Quit();
                 }
-                if (doc != null)
-                {
-                    doc.Close();
-                }
+                doc.Close(false);
                 app.Quit();
             }
             catch (Exception)
             {
-                try
-                {
-                    if (doc != null)
-                    {
-                        doc.Close();
-                    }
-                }
-#pragma warning disable RCS1075 // Avoid empty catch clause that catches System.Exception.
-                catch (Exception)
-#pragma warning restore RCS1075 // Avoid empty catch clause that catches System.Exception.
-                {
-
-                }
                 app.Quit();
             }
         }
