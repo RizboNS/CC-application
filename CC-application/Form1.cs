@@ -33,14 +33,14 @@ namespace CC_application
                     string[] inputArray = {
                         cName.Text, cAddr.Text, cPib.Text, cMb.Text, cCont.Text,
                         clName.Text,clBirth.Text, clNat.Text,clPssn.Text, clPsRelDate.Text, clPsExDate.Text, clPos.Text, clStart.Text, clEnd.Text,
-                        agExtra.Text, agCont.Text,
+                        agCntP.Text, agCont.Text,
                         wpAddr.Text, empSal.Text, empRep.Text,
                         dTod.Text
                     };
                     string[] parseArray = {
                         "!CNAME!", "!CADDR!","!CPIB!", "!CMB!", "!CCONT!",
                         "!CLNAME!","!CLBIRTH!", "!CLNAT!", "!CLPSSN!", "!CLPSRELDATE!", "!CLPSEXDATE!", "!CLPOS!", "!CLSTART!","!CLEND!",
-                        "!AGEXTRA!","!AGCONT!",
+                        "!AGCNTP!","!AGCONT!",
                         "!WPADDR!", "!EMPSAL!", "!EMPREP!",
                         "!DTOD!"
                     };

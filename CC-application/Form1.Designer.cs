@@ -58,7 +58,7 @@ namespace CC_application
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.agExtra = new System.Windows.Forms.TextBox();
+            this.agCntP = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.agCont = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -249,7 +249,7 @@ namespace CC_application
             this.clPssn.Location = new System.Drawing.Point(188, 220);
             this.clPssn.Name = "clPssn";
             this.clPssn.Size = new System.Drawing.Size(200, 22);
-            this.clPssn.TabIndex = 25;
+            this.clPssn.TabIndex = 24;
             // 
             // label11
             // 
@@ -283,7 +283,7 @@ namespace CC_application
             this.clPos.Location = new System.Drawing.Point(188, 355);
             this.clPos.Name = "clPos";
             this.clPos.Size = new System.Drawing.Size(200, 22);
-            this.clPos.TabIndex = 31;
+            this.clPos.TabIndex = 27;
             // 
             // label15
             // 
@@ -322,28 +322,29 @@ namespace CC_application
             this.label18.TabIndex = 36;
             this.label18.Text = "Agency Data";
             // 
-            // agExtra
+            // agCntP
             // 
-            this.agExtra.Location = new System.Drawing.Point(423, 85);
-            this.agExtra.Name = "agExtra";
-            this.agExtra.Size = new System.Drawing.Size(152, 22);
-            this.agExtra.TabIndex = 38;
+            this.agCntP.Location = new System.Drawing.Point(423, 85);
+            this.agCntP.Name = "agCntP";
+            this.agCntP.Size = new System.Drawing.Size(152, 22);
+            this.agCntP.TabIndex = 30;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(426, 67);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(123, 15);
+            this.label19.Size = new System.Drawing.Size(119, 15);
             this.label19.TabIndex = 37;
-            this.label19.Text = "Extra Data - !AGEXTRA!";
+            this.label19.Text = "Extra Data - !AGCNTP!";
             // 
             // agCont
             // 
             this.agCont.Location = new System.Drawing.Point(423, 130);
+            this.agCont.Margin = new System.Windows.Forms.Padding(0);
             this.agCont.Name = "agCont";
             this.agCont.Size = new System.Drawing.Size(152, 22);
-            this.agCont.TabIndex = 40;
+            this.agCont.TabIndex = 31;
             // 
             // label20
             // 
@@ -369,7 +370,7 @@ namespace CC_application
             this.wpAddr.Location = new System.Drawing.Point(610, 85);
             this.wpAddr.Name = "wpAddr";
             this.wpAddr.Size = new System.Drawing.Size(167, 22);
-            this.wpAddr.TabIndex = 43;
+            this.wpAddr.TabIndex = 32;
             // 
             // label22
             // 
@@ -385,7 +386,7 @@ namespace CC_application
             this.empSal.Location = new System.Drawing.Point(610, 130);
             this.empSal.Name = "empSal";
             this.empSal.Size = new System.Drawing.Size(167, 22);
-            this.empSal.TabIndex = 45;
+            this.empSal.TabIndex = 33;
             // 
             // label23
             // 
@@ -401,7 +402,7 @@ namespace CC_application
             this.empRep.Location = new System.Drawing.Point(610, 175);
             this.empRep.Name = "empRep";
             this.empRep.Size = new System.Drawing.Size(167, 22);
-            this.empRep.TabIndex = 47;
+            this.empRep.TabIndex = 34;
             // 
             // label24
             // 
@@ -417,42 +418,42 @@ namespace CC_application
             this.clBirth.Location = new System.Drawing.Point(188, 130);
             this.clBirth.Name = "clBirth";
             this.clBirth.Size = new System.Drawing.Size(200, 22);
-            this.clBirth.TabIndex = 48;
+            this.clBirth.TabIndex = 22;
             // 
             // clPsRelDate
             // 
             this.clPsRelDate.Location = new System.Drawing.Point(188, 265);
             this.clPsRelDate.Name = "clPsRelDate";
             this.clPsRelDate.Size = new System.Drawing.Size(200, 22);
-            this.clPsRelDate.TabIndex = 49;
+            this.clPsRelDate.TabIndex = 25;
             // 
             // clPsExDate
             // 
             this.clPsExDate.Location = new System.Drawing.Point(188, 312);
             this.clPsExDate.Name = "clPsExDate";
             this.clPsExDate.Size = new System.Drawing.Size(200, 22);
-            this.clPsExDate.TabIndex = 50;
+            this.clPsExDate.TabIndex = 26;
             // 
             // clStart
             // 
             this.clStart.Location = new System.Drawing.Point(188, 398);
             this.clStart.Name = "clStart";
             this.clStart.Size = new System.Drawing.Size(200, 22);
-            this.clStart.TabIndex = 51;
+            this.clStart.TabIndex = 28;
             // 
             // clEnd
             // 
             this.clEnd.Location = new System.Drawing.Point(188, 442);
             this.clEnd.Name = "clEnd";
             this.clEnd.Size = new System.Drawing.Size(200, 22);
-            this.clEnd.TabIndex = 52;
+            this.clEnd.TabIndex = 29;
             // 
             // dTod
             // 
             this.dTod.Location = new System.Drawing.Point(610, 441);
             this.dTod.Name = "dTod";
             this.dTod.Size = new System.Drawing.Size(167, 22);
-            this.dTod.TabIndex = 53;
+            this.dTod.TabIndex = 35;
             // 
             // Form1
             // 
@@ -476,7 +477,7 @@ namespace CC_application
             this.Controls.Add(this.label21);
             this.Controls.Add(this.agCont);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.agExtra);
+            this.Controls.Add(this.agCntP);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -509,6 +510,8 @@ namespace CC_application
             this.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(193)))), ((int)(((byte)(196)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 606);
+            this.MinimumSize = new System.Drawing.Size(816, 606);
             this.Name = "Form1";
             this.Text = "Contract Constructor";
             this.ResumeLayout(false);
@@ -545,7 +548,7 @@ namespace CC_application
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox agExtra;
+        private System.Windows.Forms.TextBox agCntP;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox agCont;
         private System.Windows.Forms.Label label20;
