@@ -75,6 +75,8 @@ namespace CC_application
             this.clStart = new System.Windows.Forms.TextBox();
             this.clEnd = new System.Windows.Forms.TextBox();
             this.dTod = new System.Windows.Forms.TextBox();
+            this.arpCode = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
@@ -86,9 +88,9 @@ namespace CC_application
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(49)))));
-            this.button2.Location = new System.Drawing.Point(16, 502);
+            this.button2.Location = new System.Drawing.Point(12, 527);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(768, 48);
+            this.button2.Size = new System.Drawing.Size(776, 36);
             this.button2.TabIndex = 2;
             this.button2.Text = "Submit";
             this.button2.UseVisualStyleBackColor = false;
@@ -299,18 +301,18 @@ namespace CC_application
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(191, 380);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(166, 15);
+            this.label16.Size = new System.Drawing.Size(144, 15);
             this.label16.TabIndex = 32;
-            this.label16.Text = "Contract Start-date - !CLSTART!";
+            this.label16.Text = "Visit Start-date - !CLSTART!";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(191, 425);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(152, 15);
+            this.label17.Size = new System.Drawing.Size(130, 15);
             this.label17.TabIndex = 34;
-            this.label17.Text = "Contract End-date - !CLEND!";
+            this.label17.Text = "Visit End-date - !CLEND!";
             // 
             // label18
             // 
@@ -327,16 +329,16 @@ namespace CC_application
             this.agCntP.Location = new System.Drawing.Point(423, 85);
             this.agCntP.Name = "agCntP";
             this.agCntP.Size = new System.Drawing.Size(152, 22);
-            this.agCntP.TabIndex = 30;
+            this.agCntP.TabIndex = 31;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(426, 67);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(119, 15);
+            this.label19.Size = new System.Drawing.Size(139, 15);
             this.label19.TabIndex = 37;
-            this.label19.Text = "Extra Data - !AGCNTP!";
+            this.label19.Text = "Contact Name - !AGCNTP!";
             // 
             // agCont
             // 
@@ -344,16 +346,16 @@ namespace CC_application
             this.agCont.Margin = new System.Windows.Forms.Padding(0);
             this.agCont.Name = "agCont";
             this.agCont.Size = new System.Drawing.Size(152, 22);
-            this.agCont.TabIndex = 31;
+            this.agCont.TabIndex = 32;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(426, 112);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 15);
+            this.label20.Size = new System.Drawing.Size(153, 15);
             this.label20.TabIndex = 39;
-            this.label20.Text = "Contact - !AGCONT!";
+            this.label20.Text = "Contact Number - !AGCONT!";
             // 
             // label21
             // 
@@ -370,7 +372,7 @@ namespace CC_application
             this.wpAddr.Location = new System.Drawing.Point(610, 85);
             this.wpAddr.Name = "wpAddr";
             this.wpAddr.Size = new System.Drawing.Size(167, 22);
-            this.wpAddr.TabIndex = 32;
+            this.wpAddr.TabIndex = 33;
             // 
             // label22
             // 
@@ -386,7 +388,7 @@ namespace CC_application
             this.empSal.Location = new System.Drawing.Point(610, 130);
             this.empSal.Name = "empSal";
             this.empSal.Size = new System.Drawing.Size(167, 22);
-            this.empSal.TabIndex = 33;
+            this.empSal.TabIndex = 34;
             // 
             // label23
             // 
@@ -402,7 +404,7 @@ namespace CC_application
             this.empRep.Location = new System.Drawing.Point(610, 175);
             this.empRep.Name = "empRep";
             this.empRep.Size = new System.Drawing.Size(167, 22);
-            this.empRep.TabIndex = 34;
+            this.empRep.TabIndex = 35;
             // 
             // label24
             // 
@@ -453,7 +455,23 @@ namespace CC_application
             this.dTod.Location = new System.Drawing.Point(610, 441);
             this.dTod.Name = "dTod";
             this.dTod.Size = new System.Drawing.Size(167, 22);
-            this.dTod.TabIndex = 35;
+            this.dTod.TabIndex = 36;
+            // 
+            // arpCode
+            // 
+            this.arpCode.Location = new System.Drawing.Point(188, 484);
+            this.arpCode.Name = "arpCode";
+            this.arpCode.Size = new System.Drawing.Size(200, 22);
+            this.arpCode.TabIndex = 30;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(191, 467);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(122, 15);
+            this.label25.TabIndex = 48;
+            this.label25.Text = "Arp Code - !ARPCODE!";
             // 
             // Form1
             // 
@@ -462,6 +480,8 @@ namespace CC_application
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(71)))), ((int)(((byte)(80)))));
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(800, 567);
+            this.Controls.Add(this.arpCode);
+            this.Controls.Add(this.label25);
             this.Controls.Add(this.dTod);
             this.Controls.Add(this.clEnd);
             this.Controls.Add(this.clStart);
@@ -565,6 +585,8 @@ namespace CC_application
         private System.Windows.Forms.TextBox clStart;
         private System.Windows.Forms.TextBox clEnd;
         private System.Windows.Forms.TextBox dTod;
+        private System.Windows.Forms.TextBox arpCode;
+        private System.Windows.Forms.Label label25;
     }
 }
 
